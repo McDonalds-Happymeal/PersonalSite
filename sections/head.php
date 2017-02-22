@@ -13,8 +13,6 @@
 
     <title>Peter Maltby</title>
 
-    <link rel="stylesheet" href="#" />
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,4 +22,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway:500" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css" />
+
   </head>

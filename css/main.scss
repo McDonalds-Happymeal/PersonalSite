@@ -1,0 +1,26 @@
+
+//  $head-font: "low Solid Italic", Lobster, cursive;
+//  $body-font: Rockwell, Raleway, sans-serif;
+
+  $head-font: 'Lobster', cursive;
+  $body-font: 'Raleway', sans-serif;
+
+  $orange: #FF9047;
+  $dark-orange: #CC7139;
+
+h1 {font-family: $head-font !important;}
+p {font-family:$body-font;}
+
+nav {
+  .navbar-header {padding:3px;}
+  background-color: #3D1704 !important;
+  background-image: url("../images/nav.jpg") !important;
+
+  .brand{}
+  .container-fluid{}
+  li{font-family: $head-font; padding:10px 25px 10px; font-size:20px;
+    a{color: $orange !important;}
+    a:hover{color: $dark-orange !important;}
+  }
+}
+section {height:100vh;}
