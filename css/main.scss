@@ -1,12 +1,14 @@
 
-//  $head-font: "low Solid Italic", Lobster, cursive;
-//  $body-font: Rockwell, Raleway, sans-serif;
+  $head-font: "low Solid Italic", Lobster, cursive;
+  $body-font: Rockwell, Raleway, sans-serif;
 
-  $head-font: 'Lobster', cursive;
-  $body-font: 'Raleway', sans-serif;
+//  $head-font: 'Lobster', cursive;
+//  $body-font: 'Raleway', sans-serif;
 
   $orange: #FF9047;
   $dark-orange: #CC7139;
+  $grey: #404040;
+  $light-grey: #808080;
 
 h1 {
   font-family: $head-font !important;
@@ -47,7 +49,22 @@ section {
 
 #profile {
   background-color: $orange;
+  img{margin: auto;}
 
+  h2{
+    color: $grey;
+    font-family:$head-font !important;
+    font-size:40px;
+    text-align: center;
+    padding-bottom:100px;
+  }
+
+  .container{
+    display:flex;
+    height:calc(90vh);
+    align-items: center;
+    justify-content: center; //This Horizontally Centers
+  }
 }
 
 #skills {
