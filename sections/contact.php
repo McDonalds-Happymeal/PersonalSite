@@ -1,7 +1,9 @@
 <?php
 ?>
 
-<section id="contact">
-  <h1>Contact</h1>
-  <p>WIP AF</p>
+<section>
+  <div class="container">
+    <h1 id="contact">Contact</h1>
+    <p>WIP AF</p>
+  </div>
 <section>

@@ -9,13 +9,16 @@
   $dark-orange: #CC7139;
   $grey: #404040;
   $light-grey: #808080;
+  $white: white;
 
 h1 {
   font-family: $head-font !important;
+  color: $orange;
 }
 
 p {
   font-family:$body-font;
+  color: $white;
 }
 
 nav {
@@ -43,13 +46,18 @@ nav {
 }
 
 section {
-  height:100vh;
+  height:140vh;
   margin:0;
+  background-color:$grey;
+  .container{
+    padding-top:25vh;
+  }
 }
 
 #profile {
   background-color: $orange;
   img{margin: auto;}
+  height:100vh;
 
   h2{
     color: $grey;
@@ -59,14 +67,39 @@ section {
     padding-bottom:100px;
   }
 
+  p{
+    color: $grey;
+  }
+
   .container{
     display:flex;
-    height:calc(90vh);
+    height:50vh;
     align-items: center;
     justify-content: center; //This Horizontally Centers
   }
 }
 
 #skills {
-  background-color:grey;
+}
+
+#education {
+
+}
+
+#refrences {
+  height:100vh;
+  margin:0;
+  background-color:$orange;
+
+  .container{
+    padding-top:5vh;
+  }
+
+  background-image: url("../images/refrences-bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size : cover;
+
+  h1{color: $grey;}
+  p{color: $grey;}
 }
