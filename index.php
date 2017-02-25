@@ -1,4 +1,6 @@
 <?php
+include("SQL/DB.php");
+
 echo("<!DOCTYPE html>
       <html land='en'>");
 include("sections/head.php");//contains all head tag info

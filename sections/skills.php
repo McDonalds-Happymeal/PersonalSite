@@ -1,26 +1,24 @@
 <?php
-//WIP
+$skills = DB::query('SELECT * FROM skills WHERE catagory = "Code" Order BY rating DESC');
 ?>
 <section id="skills">
   <div class="container">
     <h1>skills</h1>
-    <div class="parent-block">
-      <div class="block">
-        <h2>Code</h2>
+        <?php
+          $catagorys = DB::query('SELECT catagory FROM skills');
+          $catagorys = array_unique($catagorys, SORT_REGULAR);
 
-      </div>
-      <div class="block">
-        <h2>langauges</h2>
 
-      </div>
-      <div class="block">
-        <h2>Tools</h2>
+          foreach($catagorys as $catagory) {
+            echo("<div class='col-md-4'> <h2>" . $catagory['catagory'] . "</h2> <ul>");
 
-      </div>
-      <div class="block">
-        <h2>Currently Learning</h2>
+            $skills = DB::query('SELECT * FROM skills WHERE catagory = :catagory Order BY rating DESC', array(':catagory'=>$catagory['catagory']));
+            foreach($skills as $value) {
+              echo "<li>" . $value['skill'] . "<div class='rating'><div style='width:" . $value['rating'] . "%'></div></div></li>";
+            }
 
-      </div>
-    </div>
+          echo("</ul> </div>");
+          }
+        ?>
   </div>
 </section>
