@@ -46,7 +46,6 @@ nav {
 }
 
 section {
-  height:140vh;
   margin:0;
   background-color:$grey;
   .container{
@@ -80,10 +79,60 @@ section {
 }
 
 #skills {
+
+  min-height: 140vh;
+
+  .catagory{
+    border-style: solid;
+    border-width: 4px;
+    border-color: $orange;
+    margin : 25px 10px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  h2{
+    font-family: $head-font;
+    color: $orange;
+    font-size: 28px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    font-family: $body-font;
+    color: $white;
+    font-size: 16px;
+    padding: 10px 0px;
+  }
+
+  .rateing{
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    float: right;
+    border-style: solid;
+    border-width: 4px;
+    border-color: $orange;
+    border-radius: 20px;
+    height: 26px;
+    width: 40%;
+    div {
+      background-color: $orange;
+      height: 10px;
+      margin: 0 5px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: $orange;
+      border-radius: 10px;
+    }
+  }
 }
 
 #education {
-
+  min-height: 140vh;
 }
 
 #refrences {

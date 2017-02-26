@@ -4,7 +4,7 @@
 <section id="profile">
   <div class="container">
     <div class="col-md-6">
-      <img src="images/me.png" height="250" width="250" />
+      <img src="images/me.png" height="350" width="350" />
     </div>
     <div class="col-md-6">
       <h2>Why Hello there</h2>

@@ -10,14 +10,14 @@ $skills = DB::query('SELECT * FROM skills WHERE catagory = "Code" Order BY ratin
 
 
           foreach($catagorys as $catagory) {
-            echo("<div class='col-md-4'> <h2>" . $catagory['catagory'] . "</h2> <ul>");
+            echo("<div class='col-md-4'> <div class='catagory'> <h2>" . $catagory['catagory'] . "</h2> <ul>");
 
             $skills = DB::query('SELECT * FROM skills WHERE catagory = :catagory Order BY rating DESC', array(':catagory'=>$catagory['catagory']));
             foreach($skills as $value) {
-              echo "<li>" . $value['skill'] . "<div class='rating'><div style='width:" . $value['rating'] . "%'></div></div></li>";
+              echo "<li>" . $value['skill'] . "<div class='rateing'><div style='width:" . $value['rating'] . "%'></div></div></li>";
             }
 
-          echo("</ul> </div>");
+          echo("</ul> </div> </div>");
           }
         ?>
   </div>
