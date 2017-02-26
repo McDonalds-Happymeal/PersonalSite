@@ -19,6 +19,7 @@ h1 {
 p {
   font-family:$body-font;
   color: $white;
+  font-size: 16px;
 }
 
 nav {
@@ -133,6 +134,27 @@ section {
 
 #education {
   min-height: 140vh;
+  h2 {
+    font-family: $body-font;
+    color: $orange;
+    font-size: 28px;
+    padding-bottom:8px;
+    margin: 0;
+  }
+  li {
+    list-style-type: none;
+    color: $light-grey;
+    margin: 0;
+    padding:8px;
+  }
+  .col-md-4 {
+    p {
+      color: $light-grey;
+    }
+  }
+  .row {
+    margin: 100px 0;
+  }
 }
 
 #refrences {
