@@ -1,5 +1,5 @@
 <?php
-$skills = DB::query('SELECT * FROM skills WHERE catagory = "Code" Order BY rating DESC');
+//$skills = DB::query('SELECT * FROM skills WHERE catagory = "Code" Order BY rating DESC');
 ?>
 <section id="skills">
   <div class="container">
