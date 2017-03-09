@@ -158,21 +158,48 @@ section {
 }
 
 #refrences {
-  height:100vh;
+  height:105vh;
   margin:0;
   background-color:$orange;
 
   .container{
     padding-top:5vh;
+    height:100%;
   }
 
-  background-image: url("../images/refrences-bg2.jpg");
+  background-image: url("../images/refrences-bg4.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size : cover;
 
   h1{color: $grey;}
-  p{color: $grey; float:right;}
+  p{color: $grey; font-size: 18px; float:right;}
+  .content {
+    height: 50vh;
+    width:100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  li {
+    list-style-type: none;
+    color: $white;
+    margin: 0;
+    padding:8px;
+    display: inline;
+    float:right;
+  }
+
+  img {
+
+  }
+
+text {
+  min-width:50vw;
+  width: 50%;
+}
 }
 
 #contact {
