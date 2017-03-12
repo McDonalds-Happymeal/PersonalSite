@@ -1,207 +1,216 @@
-
-  $head-font: "low Solid Italic", Lobster, cursive;
-  $body-font: Rockwell, Raleway, sans-serif;
-
+$head-font: "low Solid Italic", Lobster, cursive;
+$body-font: Rockwell, Raleway, sans-serif;
 //  $head-font: 'Lobster', cursive;
 //  $body-font: 'Raleway', sans-serif;
-
-  $orange: #FF9047;
-  $dark-orange: #CC7139;
-  $grey: #404040;
-  $light-grey: #808080;
-  $white: white;
+$orange: #FF9047;
+$dark-orange: #CC7139;
+$grey: #404040;
+$light-grey: #808080;
+$white: white;
 
 h1 {
-  font-family: $head-font !important;
-  color: $orange;
+    font-family: $head-font !important;
+    color: $orange;
+    font-size: 40px;
 }
 
 p {
-  font-family:$body-font;
-  color: $white;
-  font-size: 16px;
-}
-
-nav {
-  background-color: #3D1704 !important;
-  background-image: url("../images/nav.jpg") !important;
-  background-repeat: repeat-y;
-  background-size: cover;
-  padding:0 !important;
-  margin:0 !important;
-  border:0 !important;
-
-  li{
-    font-family: $head-font;
-    padding:10px 25px 10px;
-    font-size:20px;
-    text-align: center;
-    a{
-      color: $orange !important;
-    }
-
-    a:hover{
-      color: $dark-orange !important;
-    }
-  }
-}
-
-section {
-  margin:0;
-  background-color:$grey;
-  .container{
-    padding-top:25vh;
-  }
-}
-
-#profile {
-  background-color: $orange;
-  img{margin: auto;}
-  height:100vh;
-
-  h2{
-    color: $grey;
-    font-family:$head-font !important;
-    font-size:40px;
-    text-align: center;
-    padding-bottom:100px;
-  }
-
-  p{
-    color: $grey;
-  }
-
-  .container{
-    display:flex;
-    height:50vh;
-    align-items: center;
-    justify-content: center; //This Horizontally Centers
-  }
-}
-
-#skills {
-
-  min-height: 140vh;
-
-  .catagory{
-    border-style: solid;
-    border-width: 4px;
-    border-color: $orange;
-    margin : 25px 10px;
-    padding: 10px;
-    border-radius: 20px;
-  }
-
-  h2{
-    font-family: $head-font;
-    color: $orange;
-    font-size: 28px;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  li {
     font-family: $body-font;
     color: $white;
     font-size: 16px;
-    padding: 10px 0px;
-  }
+}
 
-  .rateing{
-    display: inline-flex;
-    align-items: center;
-    justify-content: left;
-    float: right;
-    border-style: solid;
-    border-width: 4px;
-    border-color: $orange;
-    border-radius: 20px;
-    height: 26px;
-    width: 40%;
-    div {
-      background-color: $orange;
-      height: 10px;
-      margin: 0 5px;
-      border-style: solid;
-      border-width: 2px;
-      border-color: $orange;
-      border-radius: 10px;
+nav {
+    background-color: #3D1704 !important;
+    background-image: url("../images/nav.jpg") !important;
+    background-repeat: repeat-y;
+    background-size: cover;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+
+    li {
+        font-family: $head-font;
+        padding: 10px 25px;
+        font-size: 20px;
+        text-align: center;
+
+        a {
+            color: $orange !important;
+        }
+
+        a:hover {
+            color: $dark-orange !important;
+        }
     }
-  }
+}
+
+section {
+    margin: 0;
+    background-color: $grey;
+
+    .container {
+        padding-top: 25vh;
+    }
+}
+
+#profile {
+    background-color: $orange;
+
+    img {
+        margin: auto;
+    }
+    height: 100vh;
+
+    h2 {
+        color: $grey;
+        font-family: $head-font !important;
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    p {
+        color: $grey;
+    }
+
+    .container {
+        display: flex;
+        height: 50vh;
+        align-items: center;
+        justify-content: center; //This Horizontally Centers
+    }
+}
+
+#skills {
+    min-height: 140vh;
+
+    .catagory {
+        border-style: solid;
+        border-width: 4px;
+        border-color: $orange;
+        margin: 25px 10px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    h2 {
+        font-family: $head-font;
+        color: $orange;
+        font-size: 28px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        font-family: $body-font;
+        color: $white;
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .rateing {
+        display: inline-flex;
+        align-items: center;
+        justify-content: left;
+        float: right;
+        border-style: solid;
+        border-width: 4px;
+        border-color: $orange;
+        border-radius: 20px;
+        height: 26px;
+        width: 40%;
+
+        div {
+            background-color: $orange;
+            height: 10px;
+            margin: 0 5px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: $orange;
+            border-radius: 10px;
+        }
+    }
 }
 
 #education {
-  min-height: 140vh;
-  h2 {
-    font-family: $body-font;
-    color: $orange;
-    font-size: 28px;
-    padding-bottom:8px;
-    margin: 0;
-  }
-  li {
-    list-style-type: none;
-    color: $light-grey;
-    margin: 0;
-    padding:8px;
-  }
-  .col-md-4 {
-    p {
-      color: $light-grey;
+    min-height: 140vh;
+
+    h2 {
+        font-family: $body-font;
+        color: $orange;
+        font-size: 28px;
+        padding-bottom: 8px;
+        margin: 0;
     }
-  }
-  .row {
-    margin: 100px 0;
-  }
+
+    li {
+        list-style-type: none;
+        color: $light-grey;
+        margin: 0;
+        padding: 8px;
+    }
+
+    .col-md-4 {
+        p {
+            color: $light-grey;
+        }
+    }
+
+    .row {
+        margin: 100px 0;
+    }
 }
 
 #refrences {
-  height:105vh;
-  margin:0;
-  background-color:$orange;
-
-  .container{
-    padding-top:5vh;
-    height:100%;
-  }
-
-  background-image: url("../images/refrences-bg4.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size : cover;
-
-  h1{color: $grey;}
-  p{color: $grey; font-size: 18px; float:right;}
-  .content {
-    height: 50vh;
-    width:100%;
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  li {
-    list-style-type: none;
-    color: $white;
+    height: 105vh;
     margin: 0;
-    padding:8px;
-    display: inline;
-    float:right;
-  }
+    background-color: $orange;
 
-  img {
+    .container {
+        padding-top: 5vh;
+        height: 100%;
+    }
+    background-image: url("../images/refrences-bg4.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 
-  }
+    h1 {
+        color: $grey;
+    }
 
-text {
-  min-width:50vw;
-  width: 50%;
-}
+    p {
+        color: $grey;
+        font-size: 18px;
+        float: right;
+        font-family: $body-font;
+    }
+
+    .content {
+        height: calc(100vh - 200px);
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    li {
+        list-style-type: none;
+        color: $white;
+        margin: 0;
+        padding: 8px;
+        display: inline;
+        float: right;
+        font-family: $body-font;
+    }
 }
 
 #contact {
-  height:100vh;
+    height: 100vh;
 }
