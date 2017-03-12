@@ -213,4 +213,32 @@ section {
 
 #contact {
     height: 100vh;
+    .parent {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    .form {
+      input {
+        width:40%;
+        font: $body-font;
+        border-style: solid;
+        border-width: 2px;
+        border-color: $orange;
+        border-radius: 10px;
+        display: list-item;
+        margin: 10px 0px;
+        padding: 4px;
+        list-style-type: none;
+      }
+      input[name="Message"] {
+        height: 10vh;
+
+       }
+
+    }
+    .media {
+      width:50%;
+    }
 }
