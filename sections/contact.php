@@ -5,29 +5,29 @@
   <div class="container">
     <div class="form">
       <h1>Contact</h1>
-      <from action="contact_form.php" method="post">
+      <form action="contact_form.php" method="post">
         <?php
-        if(isset($post['error'])) {
+        if(isset($_SESSION['error'])) {
           echo("
-          <input type='text' name='name' placeholder='Your name' value='" . $post['name'] . "' />
-          <input type='text' name='email' placeholder='Your Email' value='" . $post['email'] . "' />
-          <input type='text' name='subject' placeholder='Subject' value='" . $post['subject'] . "' />
-          <textarea type='text' name='message' maxlength='2000' placeholder='Your Message'> " . $post['message'] . " </textarea>
-          <div class='errors'><h2>Somthing went wrong:</h2>" . $post['error'] . "
+          <input type='text' name='name' placeholder='Your name' value='" . $_SESSION['name'] . "' />
+          <input type='text' name='email' placeholder='Your Email' value='" . $_SESSION['email'] . "' />
+          <input type='text' name='subject' placeholder='Subject' value='" . $_SESSION['subject'] . "' />
+          <textarea type='text' name='message' maxlength='2000' placeholder='Your Message'> " . $_SESSION['message'] . " </textarea>
+          <div class='errors'><h2>Somthing went wrong:</h2>" . $_SESSION['error'] . "
           </div>");
         }
         else {
           echo("
-          <input type='text' name='Name' placeholder='Your name' />
-          <input type='text' name='Email' placeholder='Your Email' />
-          <input type='text' name='Subject' placeholder='Subject' />
-          <textarea type='text' name='Message' maxlength='2000' placeholder='Your Message'></textarea>");
+          <input type='text' name='name' placeholder='Your name' />
+          <input type='text' name='email' placeholder='Your Email' />
+          <input type='text' name='subject' placeholder='Subject' />
+          <textarea type='text' name='message' maxlength='2000' placeholder='Your Message'></textarea>");
         }
 
 
 
         ?>
-        <input type="submit" value="submit" />
+        <input type="submit" value="Submit" />
       </form>
     </div>
     <div class="media">

@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("SQL/DB.php");
 
 echo("<!DOCTYPE html>
